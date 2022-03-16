@@ -186,10 +186,10 @@
         }
 
         function reset() {
-            let birdLocation = Math.floor(Math.random() * 25);
             shakeCount = 0;
+            birdLocation = Math.floor(Math.random() * 25);
+            console.log(birdLocation);
             document.getElementById("shakes").innerHTML = "Number of shakes is " + shakeCount;
-            document.getElementById(birdLocation).src = "Avocet.jpg";
         }
     </script>
 </body>
