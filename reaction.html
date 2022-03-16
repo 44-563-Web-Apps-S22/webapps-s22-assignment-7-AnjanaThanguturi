@@ -32,11 +32,12 @@
       console.log(myTime);
     }
 
+    let value = Math.floor(Math.random() * 9) + 2;
     function startTime() {
-      for (let i = 0; i <= 3; i++) {
+      for (let i = 0; i <= value; i++) {
         setTimeout(() => {
           document.getElementById('countdown').innerHTML = i;
-        }, (3 - i) * 1000);
+        }, (value - i) * 1000);
       }
       setTimeout(() => {
         if (myTime == undefined) {
